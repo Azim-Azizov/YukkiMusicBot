@@ -37,7 +37,7 @@ async def ping_com(client, message: Message, _):
     start = datetime.now()
     await response.delete()
     end = datetime.now()
-    pytgping = await Flamingo.ping()
+    pytgping = await Yukki.ping()
     response = await message.reply_photo(
         photo=PING_IMG_URL,
         caption=_["ping_1"],
